@@ -1,0 +1,14 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 800px;
+  height: 569px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-color;
+}

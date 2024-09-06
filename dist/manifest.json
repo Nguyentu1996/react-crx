@@ -1,0 +1,21 @@
+{
+  "name": "CRX - Todo",
+  "version": "0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "action": {
+    "default_title": "CRX - Todo",
+    "default_popup": "index.html"
+      
+  },
+  "permissions": ["debugger", "tabs", "contextMenus"]
+}

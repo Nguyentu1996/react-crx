@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener((o,n,e)=>{alert(`${o.message} from ext`),o.message==="Hello from popup"&&(document.body.style.backgroundColor="yellow",e({status:"Background color changed to yellow"}))});console.log("Content script running on");
